@@ -1,0 +1,17 @@
+.clients-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block-end: 4rem;
+  padding-block-start: 1.5rem;
+}
+
+@media screen and (min-width: 768px){
+  .clients-content{
+    flex-direction: row;
+    padding-inline-start: 0px !important;
+    padding-block-start: 2.75rem;
+    padding-block-end: 8rem;
+  }
+}

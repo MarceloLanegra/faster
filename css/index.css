@@ -1,0 +1,43 @@
+@import 'global.css';
+
+:root {
+  --white: #ffffff; 
+  --grey: #808080; 
+  --black: #000000; 
+  --headline3: 800 2.875rem/3.5rem Inter; 
+  --headline2: 700 3rem/3.625rem Inter; 
+  --headline4: 700 1.75rem/normal Inter; 
+  --headline5: 700 1.5625rem/normal Inter; 
+  --button: 700 1.125rem/1.75rem Inter; 
+  --caption: 400 0.75rem/1.375rem Inter; 
+  --body1-regular: 400 1.125rem/1.6875rem Inter; 
+  --body1-bold: 700 1.125rem/1.6875rem Inter; 
+  --body2-regular: 400 1rem/1.375rem Inter; 
+  --body2-bold: 700 1rem/1.1875rem Inter;
+  --phoneInlineSize: 400px;
+  --phoneBlockSize: 500px;
+  --gridTemplateColumns: 1fr var(--phoneInlineSize) 926px  1fr;
+}
+
+body {
+  font: var(--body2-regular);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px){
+  body{
+    font: var(--body1-regular)
+  }
+}
+/* @media screen and (min-width: 1400px){
+  :root{
+    --phoneInlineSize: 300px;
+    --gridTemplateColumns: auto var(--phoneInlineSize) 1fr auto
+  }
+}
+
+@media screen and (min-width: 1400px){
+  :root{
+    --gridTemplateColumns: auto auto 1fr auto
+  }
+} */

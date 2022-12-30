@@ -1,0 +1,6 @@
+@media screen and (min-width: 768px){
+  .wrapper{
+    max-inline-size: 1366px;
+    margin: auto;
+  }
+}

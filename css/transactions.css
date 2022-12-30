@@ -1,0 +1,61 @@
+.transactions {
+  background-color: #e8e8e6;
+}
+
+.transactions-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-block-start: 4rem;
+  padding-block-end: 8.625rem;
+  background-image: url("../images/image-7.png");
+  background-position: bottom 0 right -205px;
+  background-repeat: no-repeat;
+}
+
+.transactions-content-info {
+  padding-inline: 1.25rem;
+}
+
+.transactions-content-info h2 {
+  margin: 0;
+  font: var(--headline5);
+}
+
+.transactions-content-info p {
+  margin: 0;
+  margin-block-start: 1rem;
+  color: var(--grey);
+}
+
+@media screen and (min-width: 768px) {
+  .transactions {
+    display: grid;
+    gap: 0;
+  }
+
+  .transactions .phone {
+    display: none;
+  }
+
+  .transactions-content {
+    padding-block-start: 13rem;
+    padding-block-end: 21.75rem;
+    background-image: url("../images/image-7.png");
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+  }
+
+  .transactions-content-info {
+    padding-inline: 0 !important;
+    max-inline-size: 28.625rem;
+  }
+
+  .transactions-content-info h2 {
+    font: var(--headline2);
+  }
+
+  .transactions-content-info p {
+    margin-block-start: 1.5rem;
+  }
+}

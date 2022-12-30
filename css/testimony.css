@@ -1,0 +1,44 @@
+@import './testimony-card.css';
+
+.testimony{
+  background-color: #ECEEF1;
+  padding-block-start: 5rem;
+  padding-block-end: 7.375rem;
+}
+
+.testimony-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8.125rem;
+}
+
+.testimony-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8.125rem;
+  padding-inline: 1.25rem;
+}
+
+.testimony-title{
+  margin: 0;
+  font: var(--headline5);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px){
+.testimony{
+  padding-block-start: 8rem;
+  padding-block-end: 5rem;
+}
+
+.testimony-title{
+  font: var(--headline2);
+}
+
+.testimony-card-container{
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+}

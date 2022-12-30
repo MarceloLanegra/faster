@@ -1,0 +1,37 @@
+.button{
+  border-radius: .5rem;
+  font: var(--button);
+  cursor: pointer;
+  padding-block: .75rem;
+}
+
+.button:active{
+  transform: scale(.95);
+}
+
+.button.is-primary{
+  border: 2px solid white;
+  background-color: transparent;
+  color: var(--white);
+  padding-inline: 3.75rem;
+}
+
+.button.is-secondary{
+  background-color:  var(--black);
+  color: var(--white)
+}
+
+.button-icon{
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon i{
+  vertical-align: middle;
+}

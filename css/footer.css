@@ -1,0 +1,73 @@
+@import './social.css';
+
+.footer{
+  background-color: var(--black);
+  color: var(--white);
+  padding-inline: 1.25rem;
+  padding-block-end: 8rem;
+  padding-block-start: 5.875rem;
+}
+
+.footer-content{
+display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  gap: .25rem
+}
+
+.footer-social span:first-of-type{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-social span:last-of-type{
+  color: var(--grey);
+  font-size: .75rem;
+}
+
+.footer-social .social{
+  padding-block-start: 1.5rem;
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.footer-list h3{
+  font: var(--button);
+  margin: 0;
+}
+
+.footer-list ul{
+  margin: 0;
+  padding: 0;
+  color: #A5A5A5;
+}
+
+.footer-list ul li {
+  text-indent: 0;
+  list-style-type: none;
+}
+
+.footer-list ul li:active {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px){
+  .footer{
+  padding-inline: 0;
+  padding-block-start: 5.5rem;
+}
+  .footer-content{
+    flex-direction: row;
+    gap:8rem;
+  }
+}

@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: "wrapper-start phone content wrapper-end";
+  }
+
+  .grid section {
+    grid-column: 1/-1;
+  }
+
+  .inset-grid {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+  }
+
+  .inset-grid [class*="content"] {
+    grid-area: content;
+    padding-inline-start: 1.875rem;
+  }
+}

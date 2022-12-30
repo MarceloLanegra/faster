@@ -1,0 +1,47 @@
+@import "./bar.css";
+
+.why {
+  background-color: var(--black);
+  padding-block-start: 4rem;
+  padding-block-end: 3.5rem;
+}
+
+.why-content-info {
+  color: var(--white);
+  padding-inline: 1.25rem;
+}
+
+.why-content-info h2 {
+  margin: 0;
+  font: var(--headline5);
+}
+
+.why-content-info p {
+  margin: 0;
+  margin-block-start: 1.5rem;
+}
+
+.why-content .phone {
+  margin-block-start: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .why {
+  padding-block-start: 13rem;
+  padding-block-end: 15.5rem;
+}
+
+  .why-content .phone {
+    display: none;
+  }
+
+  .why-content-info {
+  max-inline-size: 28.625rem;
+  padding-inline: 0 !important;
+}
+
+.why-content-info h2 {
+  font: var(--headline2);
+}
+
+}

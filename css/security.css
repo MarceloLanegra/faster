@@ -1,0 +1,50 @@
+.security {
+  padding-block: 4rem;
+}
+
+.security-content {
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.security-content-info h2 {
+  margin: 0;
+  font: var(--headline5);
+}
+
+.security-content-info p {
+  margin: 0;
+  margin-block-start: 1.5rem;
+}
+
+.security-img{
+  text-align: center;
+}
+
+.security-img img {
+  vertical-align: middle;
+  max-inline-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .security {
+    padding-block: 12.5rem;
+  }
+
+  .security-content {
+    padding-inline: 1.25rem;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .security-content-info{
+    order: 2;
+    max-inline-size: 27.875rem;
+  }
+
+  .security-content-info h2 {
+  font: var(--headline2);
+}
+}

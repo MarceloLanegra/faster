@@ -1,0 +1,49 @@
+.hamburguer {
+    height: 24px;
+    width: 24px;  
+    position: relative;
+}
+
+.ham-bar{
+    width:70%;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+
+}
+
+.bar-top{
+    top: 25%;
+}
+
+.bar-bot{
+    top: 75%;
+}
+
+
+.hamburguer.active .bar-top{
+  transform: translate(-50%,-50%) rotate(-315deg);
+    top:50%
+}
+.hamburguer.active .bar-mid{
+  opacity: 0;
+}
+.hamburguer.active .bar-bot {
+  transform: translate(-50%,-50%) rotate(-225deg);
+    top:50%
+}
+
+.hamburguer.active {
+  background-color: unset;
+}
+
+@media screen and (min-width:768px) {
+  .hamburguer{
+    display: none;
+  }
+}

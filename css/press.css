@@ -1,0 +1,57 @@
+@import "./clients.css";
+
+.press {
+  background-color: #e8e8e6;
+}
+
+.press-img img {
+  max-inline-size: 100%;
+  vertical-align: middle;
+}
+.press-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.press-content-info {
+  padding-inline: 1.25rem;
+}
+
+.press-content-info h2 {
+  margin: 0;
+  font: var(--headline5);
+}
+
+.press-content-info p {
+  margin: 0;
+  margin-block-start: 1rem;
+  color: var(--grey);
+}
+
+@media screen and (min-width: 768px) {
+  .press {
+    display: grid;
+    gap: 0;
+    background-color: var(--white);
+    padding-block-end: 7.75rem;
+  }
+
+  .press-content-info {
+    padding-inline: 0 !important;
+    max-inline-size: 38.25rem;
+  }
+  .press-content-info h2 {
+    margin: 0;
+    font: var(--headline2);
+  }
+
+  .press-content-info p {
+    max-inline-size: 36.25rem;
+    margin-block-start: 1.5rem;
+  }
+
+  .press .phone {
+    display: none;
+  }
+}

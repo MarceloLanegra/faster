@@ -1,0 +1,33 @@
+@import "menu.css";
+@import "hamburguer.css";
+
+.header {
+  background-color: var(--black);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.25rem;
+  padding-block: 1.5rem;
+  color: var(--white);
+}
+
+.header-content span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.menu ~ .button{
+  display: none;
+  background-color: var(--white);
+  padding-inline: 1rem;
+  padding-block: 5px;
+}
+
+@media screen and (min-width: 768px){
+  .menu ~ .button{
+  display: unset;
+}
+}
